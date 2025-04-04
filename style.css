@@ -1,0 +1,123 @@
+/* Reseta margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 0 20px;
+  }
+  
+  /* Container principal */
+  form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Labels do formulário */
+  label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Inputs e Textarea */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* Botão de envio */
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #357ab7;
+  }
+  
+  /* Mensagens de erro ou sucesso */
+  .mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    form {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
